@@ -1,0 +1,203 @@
+
+
+// Semantic color scheme
+@import url('https://fonts.googleapis.com/css?family=Cherry Swash'); 
+$theme-colors: (
+  primary: #007bff,
+  secondary: #868e96,
+  success: #28a745,
+  info: #17a2b8,
+  warning: #ffc107,
+  danger: #dc3545,
+  light: #f8f9fa,
+  dark: #343a40
+);
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+ 
+$enable-rounded:            true !default;
+$enable-shadows:            false;
+$enable-gradients:          false;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+// Variables
+//
+// Theme settings.
+
+$body-bg: white;
+$body-color: #292b2c;
+$body-color-inverse: invert($body-color) !default;
+$link-color: #FF7C00;
+
+
+$font-family-base: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: Cherry Swash;
+
+
+
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-h1: 2.5 * $font-size-base;
+$font-size-h2: 2 * $font-size-base;
+$font-size-h3: 1.75 * $font-size-base;
+$font-size-h4: 1.5 * $font-size-base;
+$font-size-h5: 1.25 * $font-size-base;
+$font-size-h6: $font-size-base;
+
+$display1-size: 6 * $font-size-base;
+$display2-size: 5.5 * $font-size-base;
+$display3-size: 4.5 * $font-size-base;
+$display4-size: 3.5 * $font-size-base;
+
+$border-radius: 1rem;
+
+
+
+$display-font-family: Verdana, Geneva, sans-serif;
+
+
+
+$border-radius-lg: $border-radius * 1.2;
+$border-radius-sm: $border-radius * .8;
+@import 'bootstrap-4.0.0-beta.1';
+
+
+body > * {
+  background-size: cover;
+}
+
+.opaque-overlay {
+  overflow: hidden;
+  position: relative; 
+  > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    pointer-events:none;
+    background: rgba(map-get($theme-colors, 'dark'), 0.25);
+  }
+}
+
+
+.gradient-overlay {
+  overflow: hidden;
+  position: relative; 
+  > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    pointer-events:none;
+    background: linear-gradient(to top, map-get($theme-colors, 'dark') 0%, transparent 100%);
+  }
+}
+.estrellas {
+	font-family: 'Cherry Swash';
+}
+
+.BoldText {
+	font-weight: bold;
+}
+
+.RoofTop {
+	top: 0;
+  z-index: 20;
+  position: absolute;
+  width: 100%;
+}
+
+.imglock {
+	background-position: aboslute;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.lockTop {
+  @extend .imglock;
+  height: 800px;
+}
+
+.Sized480 {
+	height: 150%;
+}
+
+.AlignMiddle {
+	vertical-align: middle;
+  width:100%;
+  position: fixed;
+}
+
+.bgBlack {
+	background-color: #000000 !important;
+}
+
+.visibility {
+	visibility: hidden;
+}
+
+.js-scrollTo {
+	// just for smooth scrollings
+}
+
+.google-map2 {
+  width: '100%';
+  height: 300px;
+}
+
+
+@-webkit-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
+@-moz-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
+@-ms-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
+@-o-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
+@keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
+
+@-webkit-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
+@-moz-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
+@-ms-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
+@-o-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
+@keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
+
+.to-top {
+	position: fixed;
+  z-index: 5;
+  background-color: black;
+  bottom: 0;
+  right: 0;
+  border-radius: 45px;
+  width: 90px;
+  height: 90px;
+  visibility: hidden;
+  /*opacity: 0.4;*/
+ 	text-align: center;
+  padding-top: 20px;
+	-webkit-animation: zamb 2s ease-in-out infinite alternate;
+	-moz-animation: zamb 2s ease-in-out infinite alternate;
+	-ms-animation: zamb 2s ease-in-out infinite alternate;
+	-o-animation: zamb 2s ease-in-out infinite alternate;
+	animation: zamb 2s ease-in-out infinite alternate;
+}
+
+.autosize {
+	font-size: calc( 3.45rem + (6 - 3.45) * ((100vw - 20rem) / (48 - 20)));
+ /*line-height: calc( 1.4 * (3.45rem + (6 - 3.45) * ((100vw - 20rem) / (48 - 20))));*/
+}
+
+.roundbox {
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.spacetop {
+	margin-top: 85px;
+}
