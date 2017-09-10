@@ -5688,7 +5688,6 @@ body > * {
   width: 90px;
   height: 90px;
   visibility: hidden;
-  /*opacity: 0.4;*/
   text-align: center;
   padding-top: 20px;
   -webkit-animation: zamb 2s ease-in-out infinite alternate;
@@ -5706,4 +5705,5 @@ body > * {
   border-bottom-left-radius: 40px; }
 
 .spacetop {
-  margin-top: 85px; }
+  margin-top: 86px;
+  /* with 1px margin */ }
