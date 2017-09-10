@@ -31,6 +31,8 @@ $enable-print-styles:       true !default;
 
 $body-bg: white;
 $body-color: #292b2c;
+
+
 $body-color-inverse: invert($body-color) !default;
 $link-color: #FF7C00;
 
@@ -59,7 +61,6 @@ $border-radius: 1rem;
 
 
 $display-font-family: Verdana, Geneva, sans-serif;
-
 
 
 $border-radius-lg: $border-radius * 1.2;
@@ -126,7 +127,7 @@ body > * {
 
 .lockTop {
   @extend .imglock;
-  height: 800px;
+  height: 100%;
 }
 
 .Sized480 {

@@ -5598,7 +5598,7 @@ body > * {
   background-position: center; }
 
 .lockTop {
-  height: 800px; }
+  height: 100%; }
 
 .Sized480 {
   height: 150%; }
