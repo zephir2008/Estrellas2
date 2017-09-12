@@ -5702,7 +5702,7 @@ body > * {
 
 .roundbox {
   border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px; }
+  border-bottom-right-radius: 40px; }
 
 .spacetop {
   margin-top: 86px;
