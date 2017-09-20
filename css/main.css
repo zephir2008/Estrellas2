@@ -5696,8 +5696,12 @@ body > * {
   -o-animation: zamb 2s ease-in-out infinite alternate;
   animation: zamb 2s ease-in-out infinite alternate; }
 
-.autosize {
-  font-size: calc( 3.45rem + (6 - 3.45) * ((100vw - 20rem) / (48 - 20)));
+.autosize1 {
+  font-size: calc( 3.45rem + 2.55/28 * (100vw - 20rem));
+  /*line-height: calc( 1.4 * (3.45rem + (6 - 3.45) * ((100vw - 20rem) / (48 - 20))));*/ }
+
+.autosize2 {
+  font-size: calc( 1.25rem + 0.5/20 * (100vw - 20rem));
   /*line-height: calc( 1.4 * (3.45rem + (6 - 3.45) * ((100vw - 20rem) / (48 - 20))));*/ }
 
 .roundbox {
