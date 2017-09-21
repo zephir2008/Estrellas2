@@ -5929,16 +5929,9 @@ body > * {
   border-radius: 45px;
   width: 90px;
   height: 90px;
-  visibility: hidden;
+  display: none;
   text-align: center;
-  padding-top: 20px;
-  /*
-	-webkit-animation: zamb 2s ease-in-out infinite alternate;
-	-moz-animation: zamb 2s ease-in-out infinite alternate;
-	-ms-animation: zamb 2s ease-in-out infinite alternate;
-	-o-animation: zamb 2s ease-in-out infinite alternate;
-	animation: zamb 2s ease-in-out infinite alternate;
-  */ }
+  padding-top: 20px; }
 
 .autosize1 {
   font-size: calc( 3.45rem + 2.55/28 * (100vw - 20rem));
