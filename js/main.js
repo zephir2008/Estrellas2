@@ -26,11 +26,11 @@
 
 
 function showTop(){
-	$('.to-top').fadeIn(slow);
+	$('.to-top').fadeIn('slow');
 }
 
 function hideTop(){
-	$('.to-top').fadeOut(slow);
+	$('.to-top').fadeOut('slow');
 }
 
 $(document).ready(function(){
