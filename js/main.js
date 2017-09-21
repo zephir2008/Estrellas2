@@ -26,14 +26,22 @@
 
 
 function showTop(){
-	$('.to-top').css('-webkit-animation', 'showUp 2s ease-in-out infinite alternate');
-	$('.to-top').css('-moz-animation', 'zamb 2s ease-in-out infinite alternate');
-	$('.to-top').css('-ms-animation', 'zamb 2s ease-in-out infinite alternate');
-	$('.to-top').css('-o-animation', 'zamb 2s ease-in-out infinite alternate');
-	$('.to-top').css('animation', 'zamb 2s ease-in-out infinite alternate');
+	$('.to-top').css('visibility','visible');
+	//$('.to-top').show();
+	$('.to-top').css('-webkit-animation', 'showUp 2s ease-in');
+	$('.to-top').css('-moz-animation', 'showUp 2s ease-in');
+	$('.to-top').css('-ms-animation', 'showUp 2s ease-in');
+	$('.to-top').css('-o-animation', 'showUp 2s ease-in');
+	$('.to-top').css('animation', 'showUp 2s ease-in');
 }
 function hideTop(){
-
+	$('.to-top').css('-webkit-animation', 'showUp 2s ease-in');
+	$('.to-top').css('-moz-animation', 'showUp 2s ease-in');
+	$('.to-top').css('-ms-animation', 'showUp 2s ease-in');
+	$('.to-top').css('-o-animation', 'showUp 2s ease-in');
+	$('.to-top').css('animation', 'showUp 2s ease-in');
+	$('.to-top').css('visibility','hidden');
+	//$('.to-top').hide();
 }
 
 $(document).ready(function(){
@@ -49,7 +57,6 @@ $(document).ready(function(){
 			showTop();
 			//$('.to-top').css('visibility','visible');
 		}
-
 	});
 
 	$('.js-scrollTo').on('click', function() {

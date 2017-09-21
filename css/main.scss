@@ -8,7 +8,8 @@ $theme-colors: (
   warning: #ffc107,
   danger: #dc3545,
   light: #f8f9fa,
-  dark: #343a40
+  dark: #343a40,
+	ered: #b11714
 );
 
 // https://zephir2008.github.io/Estrellas2/
@@ -89,7 +90,7 @@ body > * {
   }
 }
 
-@mixin gradt( $to, $color){
+@mixin gradt($to, $color){
   overflow: hidden;
   position: relative; 
   > *:first-child:before {
