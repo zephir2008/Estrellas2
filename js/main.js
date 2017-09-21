@@ -26,25 +26,11 @@
 
 
 function showTop(){
-	$('.to-top').css('visibility','visible');
-	$('.to-top').animate(
-		{bottom: 0, right: 0},
-		1000,
-		'swing'
-	);
-	$('.to-top').css('bottom',0);
-	$('.to-top').css('right',0);
+	$('.to-top').slideDown();
 }
 
 function hideTop(){
-	$('.to-top').animate(
-		{top: 0, left: 0},
-		1000,
-		'swing'
-	);
-//	$('.to-top').css('top',0);
-//	$('.to-top').css('left',0);
-	$('.to-top').css('visibility','hidden');
+	$('.to-top').slideUp();
 }
 
 $(document).ready(function(){
