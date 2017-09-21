@@ -30,7 +30,7 @@ function showTop(){
 	$('.to-top').css('left',0);
 	$('.to-top').css('visibility','visible');
 	$('.to-top').animate(
-		{bottom: 0; right: 0},
+		{bottom: 0, right: 0},
 		1000,
 		'swing'
 	);
@@ -40,7 +40,7 @@ function showTop(){
 
 function hideTop(){
 	$('.to-top').animate(
-		{top: 0; left: 0},
+		{top: 0, left: 0},
 		1000,
 		'swing'
 	);
