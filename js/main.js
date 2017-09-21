@@ -26,8 +26,6 @@
 
 
 function showTop(){
-	$('.to-top').css('top',0);
-	$('.to-top').css('left',0);
 	$('.to-top').css('visibility','visible');
 	$('.to-top').animate(
 		{bottom: 0, right: 0},
@@ -44,6 +42,8 @@ function hideTop(){
 		1000,
 		'swing'
 	);
+//	$('.to-top').css('top',0);
+//	$('.to-top').css('left',0);
 	$('.to-top').css('visibility','hidden');
 }
 
