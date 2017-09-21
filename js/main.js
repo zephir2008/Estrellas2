@@ -1,4 +1,5 @@
 /*****************************/
+/* Scroll handler */
 +function(jQuery){
     var scrollStopEventEmitter = function(element, jQuery) {
         this.scrollTimeOut = false;
@@ -23,16 +24,32 @@
     };
 }($);
 
+
+function showTop(){
+	$('.to-top').css('-webkit-animation', 'showUp 2s ease-in-out infinite alternate');
+	$('.to-top').css('-moz-animation', 'zamb 2s ease-in-out infinite alternate');
+	$('.to-top').css('-ms-animation', 'zamb 2s ease-in-out infinite alternate');
+	$('.to-top').css('-o-animation', 'zamb 2s ease-in-out infinite alternate');
+	$('.to-top').css('animation', 'zamb 2s ease-in-out infinite alternate');
+}
+function hideTop(){
+
+}
+
 $(document).ready(function(){
-	//$('.to-top').hide();
+	//$('.to-top').show();
 
 	$(window).scrollStopEventEmitter($);
+
 	$(window).on('scrollStop',function(){
 		if ($(document).scrollTop() == 0) {
-			$('.to-top').css('visibility','hidden');
+			hideTop();
+			//$('.to-top').css('visibility','hidden');
 		} else {
-			$('.to-top').css('visibility','visible');
+			showTop();
+			//$('.to-top').css('visibility','visible');
 		}
+
 	});
 
 	$('.js-scrollTo').on('click', function() {

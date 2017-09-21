@@ -5580,6 +5580,48 @@ body > * {
     pointer-events: none;
     background: linear-gradient(to top, #343a40 0%, transparent 100%); }
 
+.gradient-overlay-reverse {
+  overflow: hidden;
+  position: relative; }
+  .gradient-overlay-reverse > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #343a40 0%, transparent 100%); }
+
+.gradient-overlay-light {
+  overflow: hidden;
+  position: relative; }
+  .gradient-overlay-light > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(to top, #f8f9fa 0%, transparent 100%); }
+
+.gradient-overlay-light-reverse {
+  overflow: hidden;
+  position: relative; }
+  .gradient-overlay-light-reverse > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #f8f9fa 0%, transparent 100%); }
+
 .estrellas {
   font-family: 'Cherry Swash'; }
 
@@ -5617,6 +5659,106 @@ body > * {
 .google-map2 {
   width: '100%';
   height: 300px; }
+
+@-webkit-keyframes showUp {
+  from {
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    right: 0;
+    opacity: 1; } }
+
+@-moz-keyframes showUp {
+  from {
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    right: 0;
+    opacity: 1; } }
+
+@-ms-keyframes showUp {
+  from {
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    right: 0;
+    opacity: 1; } }
+
+@-o-keyframes showUp {
+  from {
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    right: 0;
+    opacity: 1; } }
+
+@keyframes showUp {
+  from {
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    right: 0;
+    opacity: 1; } }
+
+@-webkit-keyframes hideUp {
+  from {
+    bottom: 0;
+    right: 0;
+    opacity: 1; }
+  to {
+    top: 0;
+    left: 0;
+    opacity: 0; } }
+
+@-moz-keyframes hideUp {
+  from {
+    bottom: 0;
+    right: 0;
+    opacity: 1; }
+  to {
+    top: 0;
+    left: 0;
+    opacity: 0; } }
+
+@-ms-keyframes hideUp {
+  from {
+    bottom: 0;
+    right: 0;
+    opacity: 1; }
+  to {
+    top: 0;
+    left: 0;
+    opacity: 0; } }
+
+@-o-keyframes hideUp {
+  from {
+    bottom: 0;
+    right: 0;
+    opacity: 1; }
+  to {
+    top: 0;
+    left: 0;
+    opacity: 0; } }
+
+@keyframes hideUp {
+  from {
+    bottom: 0;
+    right: 0;
+    opacity: 1; }
+  to {
+    top: 0;
+    left: 0;
+    opacity: 0; } }
 
 @-webkit-keyframes glowing {
   from {
@@ -5690,11 +5832,13 @@ body > * {
   visibility: hidden;
   text-align: center;
   padding-top: 20px;
-  -webkit-animation: zamb 2s ease-in-out infinite alternate;
-  -moz-animation: zamb 2s ease-in-out infinite alternate;
-  -ms-animation: zamb 2s ease-in-out infinite alternate;
-  -o-animation: zamb 2s ease-in-out infinite alternate;
-  animation: zamb 2s ease-in-out infinite alternate; }
+  /*
+	-webkit-animation: zamb 2s ease-in-out infinite alternate;
+	-moz-animation: zamb 2s ease-in-out infinite alternate;
+	-ms-animation: zamb 2s ease-in-out infinite alternate;
+	-o-animation: zamb 2s ease-in-out infinite alternate;
+	animation: zamb 2s ease-in-out infinite alternate;
+  */ }
 
 .autosize1 {
   font-size: calc( 3.45rem + 2.55/28 * (100vw - 20rem));
