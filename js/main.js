@@ -26,22 +26,25 @@
 
 
 function showTop(){
+	$('.to-top').css('top',0);
+	$('.to-top').css('left',0);
 	$('.to-top').css('visibility','visible');
-	//$('.to-top').show();
-	$('.to-top').css('-webkit-animation', 'showUp 2s ease-in');
-	$('.to-top').css('-moz-animation', 'showUp 2s ease-in');
-	$('.to-top').css('-ms-animation', 'showUp 2s ease-in');
-	$('.to-top').css('-o-animation', 'showUp 2s ease-in');
-	$('.to-top').css('animation', 'showUp 2s ease-in');
+	$('.to-top').animate(
+		{bottom: 0; right: 0},
+		1000,
+		'swing'
+	);
+	$('.to-top').css('bottom',0);
+	$('.to-top').css('right',0);
 }
+
 function hideTop(){
-	$('.to-top').css('-webkit-animation', 'showUp 2s ease-in');
-	$('.to-top').css('-moz-animation', 'showUp 2s ease-in');
-	$('.to-top').css('-ms-animation', 'showUp 2s ease-in');
-	$('.to-top').css('-o-animation', 'showUp 2s ease-in');
-	$('.to-top').css('animation', 'showUp 2s ease-in');
+	$('.to-top').animate(
+		{top: 0; left: 0},
+		1000,
+		'swing'
+	);
 	$('.to-top').css('visibility','hidden');
-	//$('.to-top').hide();
 }
 
 $(document).ready(function(){
