@@ -5922,7 +5922,7 @@ body > * {
 .to-top {
   position: fixed;
   z-index: 5;
-  background-color: black;
+  background-color: transparent black;
   bottom: 0;
   right: 0;
   border-radius: 45px;
