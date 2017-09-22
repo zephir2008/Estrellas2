@@ -224,9 +224,12 @@ body > * {
   width: 90px;
   height: 90px;
   display: none;
- //  visibility: hidden;
  	text-align: center;
   padding-top: 20px;
+}
+
+.radius {
+  border-radius: 7px !important;
 }
 
 .autosize1 {

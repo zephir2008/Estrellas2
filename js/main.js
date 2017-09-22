@@ -34,17 +34,24 @@ function hideTop(){
 }
 
 $(document).ready(function(){
-	//$('.to-top').show();
+	document.addEventListener('scroll', function (event) {
+		if ($(document).scrollTop() == 0) {
+			hideTop();
+		} else {
+			showTop();
+		}
+//	    if (event.target.id === 'idOfUl') { // or any other filtering condition
+//	        console.log('scrolling', event.target);
+//	    }
+	}, true /*Capture event*/);
+
 
 	$(window).scrollStopEventEmitter($);
-
 	$(window).on('scrollStop',function(){
 		if ($(document).scrollTop() == 0) {
 			hideTop();
-			//$('.to-top').css('visibility','hidden');
 		} else {
 			showTop();
-			//$('.to-top').css('visibility','visible');
 		}
 	});
 
@@ -52,13 +59,10 @@ $(document).ready(function(){
 		var page = $(this).attr('href');
 		var speed = 750;
 		var high = parseInt($("#HEAD").css('height'));
-		$('html, body').animate(
-			{
+		$('html, body').animate({
 				scrollTop: $(page).offset().top - high
-			},
-			speed, 'swing'
+			}, speed, 'swing'
 	 	);
-
 	  	return false;
 	});
 });

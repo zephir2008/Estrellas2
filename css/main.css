@@ -5933,6 +5933,9 @@ body > * {
   text-align: center;
   padding-top: 20px; }
 
+.radius {
+  border-radius: 7px !important; }
+
 .autosize1 {
   font-size: calc( 3.45rem + 2.55/28 * (100vw - 20rem));
   /*line-height: calc( 1.4 * (3.45rem + (6 - 3.45) * ((100vw - 20rem) / (48 - 20))));*/ }
