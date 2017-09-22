@@ -46,14 +46,14 @@ $(document).ready(function(){
 	}, true /*Capture event*/);
 
 
-	$(window).scrollStopEventEmitter($);
-	$(window).on('scrollStop',function(){
-		if ($(document).scrollTop() == 0) {
-			hideTop();
-		} else {
-			showTop();
-		}
-	});
+//	$(window).scrollStopEventEmitter($);
+//	$(window).on('scrollStop',function(){
+//		if ($(document).scrollTop() == 0) {
+//			hideTop();
+//		} else {
+//			showTop();
+//		}
+//	});
 
 	$('.js-scrollTo').on('click', function() {
 		var page = $(this).attr('href');
