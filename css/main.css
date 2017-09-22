@@ -5735,7 +5735,6 @@ body > * {
   width: 100%; }
 
 .imglock, .lockTop {
-  background-position: left top;
   background-attachment: fixed;
   background-position: center; }
 
@@ -5933,8 +5932,8 @@ body > * {
   text-align: center;
   padding-top: 20px; }
 
-.to-top a {
-  animation: glowing 2s ease infinite alternate; }
+.to-top .fa-angle-double-up::before {
+  animation: glowing 2s ease infinite alternate !important; }
 
 .radius {
   border-radius: 7px !important; }
