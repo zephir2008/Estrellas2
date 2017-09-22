@@ -26,11 +26,11 @@
 
 
 function showTop(){
-	$('.to-top').fadeIn('slow');
+	$('.to-top').fadeIn('slow').css({'animation','zamb 2s ease-in-out 0 infinite alternate'};
 }
 
 function hideTop(){
-	$('.to-top').fadeOut('slow');
+	$('.to-top').fadeOut('slow')).css('animation','none');
 }
 
 $(document).ready(function(){
