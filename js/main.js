@@ -26,7 +26,7 @@
 
 
 function showTop(){
-	$('.to-top').fadeIn('slow').css({'animation','zamb 2s ease-in-out 0 infinite alternate'};
+	$('.to-top').fadeIn('slow').css('animation','zamb 2s ease-in-out 0 infinite alternate');
 }
 
 function hideTop(){
