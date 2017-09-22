@@ -202,11 +202,11 @@ body > * {
 @keyframes hideUp { from { bottom: 0; right: 0; opacity: 1; } to { top: 0; left: 0; opacity: 0;} }
 
 
-@-webkit-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
-@-moz-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
-@-ms-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
-@-o-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
-@keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
+@-webkit-keyframes glowing { from { text-shadow: 0 0 10px #ff0000; } to { text-shadow: 0 0 40px #ff0000; } }
+@-moz-keyframes glowing { from { text-shadow: 0 0 10px #ff0000; } to { text-shadow: 0 0 40px #ff0000; } }
+@-ms-keyframes glowing { from { text-shadow: 0 0 10px #ff0000; } to { text-shadow: 0 0 40px #ff0000; } }
+@-o-keyframes glowing { from { text-shadow: 0 0 10px #ff0000; } to { text-shadow: 0 0 40px #ff0000; } }
+@keyframes glowing { from { text-shadow: 0 0 10px #ff0000; } to { text-shadow: 0 0 40px #ff0000; } }
 
 @-webkit-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
 @-moz-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
@@ -226,6 +226,7 @@ body > * {
   display: none;
  	text-align: center;
   padding-top: 20px;
+  opacity: 0.5;
 }
 
 .to-top .fa-angle-double-up::before {
