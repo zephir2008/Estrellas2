@@ -228,6 +228,10 @@ body > * {
   padding-top: 20px;
 }
 
+.to-top i {
+  animation: glowing 2s ease infinite alternate;
+ }
+
 .radius {
   border-radius: 7px !important;
 }
