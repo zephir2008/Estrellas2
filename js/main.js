@@ -30,7 +30,7 @@ function showTop(){
 }
 
 function hideTop(){
-	$('.to-top').fadeOut('slow')).css('animation','none');
+	$('.to-top').fadeOut('slow').css('animation','none');
 }
 
 $(document).ready(function(){
