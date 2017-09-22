@@ -5735,7 +5735,7 @@ body > * {
   width: 100%; }
 
 .imglock, .lockTop {
-  background-position: aboslute;
+  background-position: absolute;
   background-attachment: fixed;
   background-position: center; }
 
@@ -5757,7 +5757,7 @@ body > * {
   visibility: hidden; }
 
 .google-map2 {
-  width: '100%';
+  width: 100%;
   height: 300px; }
 
 @-webkit-keyframes showUp {
@@ -5862,33 +5862,33 @@ body > * {
 
 @-webkit-keyframes glowing {
   from {
-    text-shadow: none; }
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
   to {
-    text-shadow: 0 0 40px white; } }
+    text-shadow: 0 0 40px cyan; } }
 
 @-moz-keyframes glowing {
   from {
-    text-shadow: none; }
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
   to {
-    text-shadow: 0 0 40px white; } }
+    text-shadow: 0 0 40px cyan; } }
 
 @-ms-keyframes glowing {
   from {
-    text-shadow: none; }
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
   to {
-    text-shadow: 0 0 40px white; } }
+    text-shadow: 0 0 40px cyan; } }
 
 @-o-keyframes glowing {
   from {
-    text-shadow: none; }
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
   to {
-    text-shadow: 0 0 40px white; } }
+    text-shadow: 0 0 40px cyan; } }
 
 @keyframes glowing {
   from {
-    text-shadow: none; }
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
   to {
-    text-shadow: 0 0 40px white; } }
+    text-shadow: 0 0 40px cyan; } }
 
 @-webkit-keyframes zamb {
   from {

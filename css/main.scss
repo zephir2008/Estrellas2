@@ -152,7 +152,7 @@ body > * {
 }
 
 .imglock {
-	background-position: aboslute;
+	background-position: absolute;
   background-attachment: fixed;
   background-position: center;
 }
@@ -185,7 +185,7 @@ body > * {
 }
 
 .google-map2 {
-  width: '100%';
+  width: 100%;
   height: 300px;
 }
 
@@ -202,11 +202,11 @@ body > * {
 @keyframes hideUp { from { bottom: 0; right: 0; opacity: 1; } to { top: 0; left: 0; opacity: 0;} }
 
 
-@-webkit-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
-@-moz-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
-@-ms-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
-@-o-keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
-@keyframes glowing { from { text-shadow: none; } to { text-shadow: 0 0 40px rgba(255,255,255,1); } }
+@-webkit-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
+@-moz-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
+@-ms-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
+@-o-keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
+@keyframes glowing { from { text-shadow: 0 0 10px rgba(255,0,0,0.5); } to { text-shadow: 0 0 40px rgba(0,255,255,1); } }
 
 @-webkit-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
 @-moz-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
