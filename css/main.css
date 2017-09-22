@@ -5743,7 +5743,7 @@ body > * {
   height: 100%; }
 
 .Sized480 {
-  height: 80%; }
+  height: 480px; }
 
 .AlignMiddle {
   vertical-align: middle;
