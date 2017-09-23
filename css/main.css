@@ -5905,7 +5905,7 @@ body > * {
 
 @keyframes glowing {
   from {
-    text-shadow: 0 0 8px #fff; }
+    text-shadow: 0 0 1px #fff; }
   to {
     text-shadow: 0 0 15px #fff; } }
 
