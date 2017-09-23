@@ -5905,33 +5905,33 @@ body > * {
 
 @-webkit-keyframes glowing {
   from {
-    text-shadow: 0 0 10px #ff0000; }
+    text-shadow: 0 -4px 4px #ff0000; }
   to {
-    text-shadow: 0 0 40px #ff0000; } }
+    text-shadow: 0 4px 10px #ff0000; } }
 
 @-moz-keyframes glowing {
   from {
-    text-shadow: 0 0 10px #ff0000; }
+    text-shadow: 0 -4px 4px #ff0000; }
   to {
-    text-shadow: 0 0 40px #ff0000; } }
+    text-shadow: 0 4px 10px #ff0000; } }
 
 @-ms-keyframes glowing {
   from {
-    text-shadow: 0 0 10px #ff0000; }
+    text-shadow: 0 -4px 4px #ff0000; }
   to {
-    text-shadow: 0 0 40px #ff0000; } }
+    text-shadow: 0 4px 10px #ff0000; } }
 
 @-o-keyframes glowing {
   from {
-    text-shadow: 0 0 10px #ff0000; }
+    text-shadow: 0 -4px 4px #ff0000; }
   to {
-    text-shadow: 0 0 40px #ff0000; } }
+    text-shadow: 0 4px 10px #ff0000; } }
 
 @keyframes glowing {
   from {
-    text-shadow: 0 0 10px #ff0000; }
+    text-shadow: 0 -4px 4px #ff0000; }
   to {
-    text-shadow: 0 0 40px #ff0000; } }
+    text-shadow: 0 4px 10px #ff0000; } }
 
 @-webkit-keyframes zamb {
   from {
