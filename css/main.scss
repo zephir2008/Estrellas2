@@ -234,11 +234,11 @@ body > * {
 @keyframes hideUp { from { bottom: 0; right: 0; opacity: 1; } to { top: 0; left: 0; opacity: 0;} }
 
 
-@-webkit-keyframes glowing { from { text-shadow: 0 -4px 4px #ff0000; } to { text-shadow: 0 4px 10px #ff0000; } }
-@-moz-keyframes glowing { from { text-shadow: 0 -4px 4px #ff0000; } to { text-shadow: 0 4px 10px #ff0000; } }
-@-ms-keyframes glowing { from { text-shadow: 0 -4px 4px #ff0000; } to { text-shadow: 0 4px 10px #ff0000; } }
-@-o-keyframes glowing { from { text-shadow: 0 -4px 4px #ff0000; } to { text-shadow: 0 4px 10px #ff0000; } }
-@keyframes glowing { from { text-shadow: 0 -4px 4px #ff0000; } to { text-shadow: 0 4px 10px #ff0000; } }
+@-webkit-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
+@-moz-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
+@-ms-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
+@-o-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
+@keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
 
 @-webkit-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
 @-moz-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
@@ -249,7 +249,7 @@ body > * {
 .to-top {
 	position: fixed;
   z-index: 5;
-  background-color: transparent; // black;
+  background-color: black; //transparent; // black;
   bottom: 0;
   right: 0;
   border-radius: 45px;

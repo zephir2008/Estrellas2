@@ -5905,33 +5905,33 @@ body > * {
 
 @-webkit-keyframes glowing {
   from {
-    text-shadow: 0 -4px 4px #ff0000; }
+    text-shadow: 0 -4px 8px #ff0000; }
   to {
-    text-shadow: 0 4px 10px #ff0000; } }
+    text-shadow: 0 4px 8px #ff0000; } }
 
 @-moz-keyframes glowing {
   from {
-    text-shadow: 0 -4px 4px #ff0000; }
+    text-shadow: 0 -4px 8px #ff0000; }
   to {
-    text-shadow: 0 4px 10px #ff0000; } }
+    text-shadow: 0 4px 8px #ff0000; } }
 
 @-ms-keyframes glowing {
   from {
-    text-shadow: 0 -4px 4px #ff0000; }
+    text-shadow: 0 -4px 8px #ff0000; }
   to {
-    text-shadow: 0 4px 10px #ff0000; } }
+    text-shadow: 0 4px 8px #ff0000; } }
 
 @-o-keyframes glowing {
   from {
-    text-shadow: 0 -4px 4px #ff0000; }
+    text-shadow: 0 -4px 8px #ff0000; }
   to {
-    text-shadow: 0 4px 10px #ff0000; } }
+    text-shadow: 0 4px 8px #ff0000; } }
 
 @keyframes glowing {
   from {
-    text-shadow: 0 -4px 4px #ff0000; }
+    text-shadow: 0 -4px 8px #ff0000; }
   to {
-    text-shadow: 0 4px 10px #ff0000; } }
+    text-shadow: 0 4px 8px #ff0000; } }
 
 @-webkit-keyframes zamb {
   from {
@@ -5966,7 +5966,7 @@ body > * {
 .to-top {
   position: fixed;
   z-index: 5;
-  background-color: transparent;
+  background-color: blacktransparent;
   bottom: 0;
   right: 0;
   border-radius: 45px;
