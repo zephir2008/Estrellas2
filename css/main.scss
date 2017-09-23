@@ -86,7 +86,27 @@ body > * {
     left: 0px;
     top: 0px; 
     pointer-events:none;
-    background: rgba(map-get($theme-colors, 'dark'), 0.25);
+    background: rgba(map-get($theme-colors, 'dark'), 0.35);
+  }
+}
+
+@mixin dblgradt($color){
+  overflow: hidden;
+  position: relative; 
+  > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    pointer-events: none;
+    //background: transparent;
+    //background: -webkit-linear-gradient(map-get($theme-colors, $color) 0%, transparent 100%, 0%);
+    //background: -o-linear-gradient(map-get($theme-colors, $color) 0%, transparent 100%, 0%);
+    //background: -moz-linear-gradient(map-get($theme-colors, $color) 0%, transparent 100%, 0%);
+    background: linear-gradient(map-get($theme-colors, $color) 0%, transparent 50%, map-get($theme-colors, $color) 100%);
   }
 }
 
@@ -102,8 +122,20 @@ body > * {
     left: 0px;
     top: 0px; 
     pointer-events:none;
-    background: linear-gradient(unquote($to), map-get($theme-colors, $color) 0%, transparent 100%);
+    background: transparent;
+    background: -webkit-linear-gradient(unquote($to), map-get($theme-colors, $color) 0%, transparent 100%);
+    background: -o-linear-gradient(unquote($to), map-get($theme-colors, $color) 0%, transparent 100%);
+    background: -moz-linear-gradient(unquote($to), map-get($theme-colors, $color) 0%, transparent 100%);
+    background: linear-gradient( unquote($to), map-get($theme-colors, $color) 0%, transparent 100%);
   }
+}
+
+.dbl-gradient-orverlay-light {
+	@include dblgradt('light');
+}
+
+.dbl-gradient-orverlay-dark {
+	@include dblgradt('dark');
 }
 
 .gradient-overlay {
