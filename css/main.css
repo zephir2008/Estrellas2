@@ -5905,9 +5905,9 @@ body > * {
 
 @keyframes glowing {
   from {
-    text-shadow: -8px 0 8px #fff; }
+    text-shadow: 0 0 8px #fff; }
   to {
-    text-shadow: 8px 0 8px #fff; } }
+    text-shadow: 0 0 15px #fff; } }
 
 @-webkit-keyframes zamb {
   from {
@@ -5953,7 +5953,7 @@ body > * {
   padding-top: 20px; }
 
 .to-top .fa-angle-double-up::before {
-  animation: glowing 2s ease infinite alternate !important; }
+  animation: glowing 2s ease-in-out infinite alternate; }
 
 .radius {
   border-radius: 7px !important; }

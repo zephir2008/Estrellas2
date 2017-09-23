@@ -238,7 +238,7 @@ body > * {
 //@-moz-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
 //@-ms-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
 //@-o-keyframes glowing { from { text-shadow: 0 -4px 8px #ff0000; } to { text-shadow: 0 4px 8px #ff0000; } }
-@keyframes glowing { from { text-shadow: -8px 0 8px #fff; } to { text-shadow: 8px 0 8px #fff; } }
+@keyframes glowing { from { text-shadow: 0 0 8px #fff; } to { text-shadow: 0 0 15px #fff; } }
 
 @-webkit-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
 @-moz-keyframes zamb { from { opacity: 0.8; } to { opacity: 0.2; } }
@@ -261,7 +261,7 @@ body > * {
 }
 
 .to-top .fa-angle-double-up::before {
-  animation: glowing 2s ease infinite alternate !important;
+  animation: glowing 2s ease-in-out infinite alternate;
  }
 
 .radius {
