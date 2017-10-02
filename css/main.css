@@ -5973,3 +5973,31 @@ body > * {
 .spacetop {
   margin-top: 86px;
   /* with 1px margin */ }
+
+.gradient-slash {
+  overflow: hidden;
+  position: relative; }
+  .gradient-slash > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: radial-gradient(circle at right, #343a40 49%, transparent 51%); }
+
+.gradient-antislash {
+  overflow: hidden;
+  position: relative; }
+  .gradient-antislash > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(135deg, #343a40 40%, transparent 42%); }
