@@ -286,3 +286,36 @@ body > * {
 .spacetop {
 	margin-top: 86px;				/* with 1px margin */
 }
+
+.gradient-slash {
+  overflow: hidden;
+  position: relative; 
+  > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    pointer-events:none;
+//    background: linear-gradient(45deg, map-get($theme-colors, 'dark') 33%, transparent 36%), 
+    	background: radial-gradient(circle at right, map-get($theme-colors, 'dark') 49%, transparent 51%);
+    }
+}
+
+.gradient-antislash {
+  overflow: hidden;
+  position: relative; 
+    > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    pointer-events:none;
+    background: linear-gradient(135deg, map-get($theme-colors, 'dark') 40%, transparent 42%);
+  }
+}
