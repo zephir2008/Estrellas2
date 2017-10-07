@@ -6007,4 +6007,4 @@ body > * {
   cursor: pointer; }
 
 .onover:hover {
-  background: linear-gradient(135deg, #f8f9fa 40%, transparent 42%); }
+  background: radial-gradient(circle at bottom, #868e96 40%, transparent 50%); }

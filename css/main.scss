@@ -319,5 +319,8 @@ body > * {
 }
 
 .onover:hover {
-		background: linear-gradient(135deg, map-get($theme-colors, 'light') 40%, transparent 42%);
+//  > *:first-child:before {
+     	background: radial-gradient(circle at bottom, map-get($theme-colors, 'secondary') 40%, transparent 50%);
+//		background: linear-gradient(135deg, map-get($theme-colors, 'secondary') 40%, map-get($theme-colors, 'dark') 42%);
+//  }
 }

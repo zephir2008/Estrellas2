@@ -55,7 +55,7 @@ $(document).ready(function(){
 				scrollTop: $(page).offset().top - high
 			}, speed, 'swing'
 	 	);
-console.log('scrolling!!');
+//console.log('scrolling!!');
 	  	return false;
 	});
 });
