@@ -5950,7 +5950,8 @@ body > * {
   height: 90px;
   display: none;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 20px;
+  cursor: pointer; }
 
 .to-top .fa-angle-double-up::before {
   animation: glowing 2s ease-in-out infinite alternate; }

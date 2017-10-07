@@ -45,7 +45,6 @@ $(document).ready(function(){
 //	    }
 	}, true /*Capture event*/);
 
-
 //	$(window).scrollStopEventEmitter($);
 //	$(window).on('scrollStop',function(){
 //		if ($(document).scrollTop() == 0) {
@@ -55,7 +54,8 @@ $(document).ready(function(){
 //		}
 //	});
 
-	$('.js-scrollTo').on('click', function() {
+	//$('.js-scrollTo').on('click', function() {
+	$('.js-scrollTo, .to-top').on('click', function() {
 		var page = $(this).attr('href');
 		var speed = 750;
 		var high = parseInt($("#HEAD").css('height'));
