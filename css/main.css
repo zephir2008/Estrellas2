@@ -6002,3 +6002,9 @@ body > * {
     top: 0px;
     pointer-events: none;
     background: linear-gradient(135deg, #343a40 40%, transparent 42%); }
+
+.onover {
+  cursor: pointer; }
+
+.onover:hover {
+  background: linear-gradient(135deg, #f8f9fa 40%, transparent 42%); }

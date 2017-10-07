@@ -313,3 +313,11 @@ body > * {
     background: linear-gradient(135deg, map-get($theme-colors, 'dark') 40%, transparent 42%);
   }
 }
+
+.onover{
+	cursor: pointer;
+}
+
+.onover:hover {
+		background: linear-gradient(135deg, map-get($theme-colors, 'light') 40%, transparent 42%);
+}
