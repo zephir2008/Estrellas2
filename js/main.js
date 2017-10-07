@@ -45,14 +45,6 @@ $(document).ready(function(){
 //	    }
 	}, true /*Capture event*/);
 
-//	$(window).scrollStopEventEmitter($);
-//	$(window).on('scrollStop',function(){
-//		if ($(document).scrollTop() == 0) {
-//			hideTop();
-//		} else {
-//			showTop();
-//		}
-//	});
 
 	//$('.js-scrollTo').on('click', function() {
 	$('.js-scrollTo, .to-top').on('click', function() {
@@ -63,6 +55,7 @@ $(document).ready(function(){
 				scrollTop: $(page).offset().top - high
 			}, speed, 'swing'
 	 	);
+console.log('scrolling!!');
 	  	return false;
 	});
 });
